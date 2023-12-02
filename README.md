@@ -17,7 +17,8 @@ A classic Snake Game implemented in Python using the Tkinter library for the gra
 
 ## Screenshots
 
-![Gameplay Screenshot](screenshots/gameplay.png)
+![Gameplay Screenshot](https://github.com/sahanRanasingha/Snake-Game/raw/main/Demo/)
+
 
 ## Requirements
 
