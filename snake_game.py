@@ -87,11 +87,11 @@ class SnakeGame:
     def check_collision(self):
         head = self.snake[0]
         if head[0] < 0 or head[0] >= 400 or head[1] < 0 or head[1] >= 400:
-            return True  # Collision with walls
+            return True  
 
         for segment in self.snake[1:]:
             if head == segment:
-                return True  # Collision with itself
+                return True  
 
         return False
 
@@ -99,7 +99,7 @@ class SnakeGame:
         head = self.snake[0]
         food_coords = self.canvas.coords(self.food)
         if head == (food_coords[0], food_coords[1]):
-            self.snake.append((0, 0))  # Dummy position, will be updated in the next move
+            self.snake.append((0, 0))  
             self.canvas.delete(self.food)
             self.food = self.create_food()
             self.score += 1
